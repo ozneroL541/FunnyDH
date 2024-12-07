@@ -7,6 +7,12 @@ These modules are not safe. The algorithm implementation is purposely not secure
 This program requires **python3** and **pyCryptoDome** to work.
 
 ## How to use
+Enter the folder.
+
+    cd FunnyDH
+Execute the main program (or one of the submodules if you already know which one you are going to use).
+
+    python3 main.py
 ### Alice 1
 To start a key exchange execute the Alice 1 module.
 Give the prime number and the public key to Bob and memorize the private key.
