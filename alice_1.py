@@ -1,10 +1,10 @@
 from Crypto.Util import number
 import funnydh as fdh
 
-# Number of bits
-n = fdh.n
-# Generator
-g = fdh.g
+n:int = fdh.n
+'''Number of bits for the prime number. '''
+g:int = fdh.g
+'''Generator for the cyclic group.'''
 
 def main():
     """
@@ -19,7 +19,7 @@ def main():
         - `fdh` is assumed to be a module that provides the `gen_prime` and `gen_keys` functions.
         - `g` and `n` are assumed to be predefined variables representing the generator and the number of bits, respectively.
     """
-    p = fdh.gen_prime(n)
+    p:int = fdh.gen_prime(n)
     a, A = fdh.gen_keys(g, p)
 
     print("Configuration")

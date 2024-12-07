@@ -1,9 +1,9 @@
 import funnydh as fdh
 
-# Number of bits
-n = fdh.n
-# Generator
-g = fdh.g
+n:int = fdh.n
+'''Number of bits for the prime number. '''
+g:int = fdh.g
+'''Generator for the cyclic group.'''
 
 def main():
     """
@@ -25,14 +25,14 @@ def main():
     A:int = int(input("Enter the public key:\t"))
 
     b, B = fdh.gen_keys(g, p)
-    k = fdh.calc_common_key(b, A, p)
+    k:int = fdh.calc_common_key(b, A, p)
 
     print(f"Generator:\t\t{g}")
     print("-" * 50)
     print(f"Public key:\t{B}")
     print()
     print(f"Common key:\t{k}")
-    k = fdh.humanize(k)
+    k:str = fdh.humanize(k)
     print(f"Common key:\t{k}")
 
 if __name__ == "__main__":

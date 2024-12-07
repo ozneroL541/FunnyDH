@@ -1,15 +1,15 @@
 from Crypto.Util import number
 import funnydh as fdh
 
-# Number of bits
-n = fdh.n
-# Generator
-g = fdh.g
+n:int = fdh.n
+'''Number of bits for the prime number. '''
+g:int = fdh.g
+'''Generator for the cyclic group.'''
 
 def main():
     """
     Main function to perform the Funny Diffie-Hellman key exchange.
-    
+
     Prompts the user to input a prime number, a secret key, and the other's public key.
     Calculates the common key using the provided inputs and prints it.
     Then, humanizes the common key and prints it again.
@@ -25,11 +25,9 @@ def main():
     a:int = int(input("Enter the secret key:\t"))
     B:int = int(input("Enter the other's public key:\t"))
     print()
-    
-    k = fdh.calc_common_key(a, B, p)
-
+    k:int = fdh.calc_common_key(a, B, p)
     print(f"Common key:\t{k}")
-    k = fdh.humanize(k)
+    k:str = fdh.humanize(k)
     print(f"Common key:\t{k}")
 
 if __name__ == "__main__":
