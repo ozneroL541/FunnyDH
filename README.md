@@ -1,3 +1,5 @@
+<a href="https://github.com/ozneroL541/FunnyDH/blob/master/LICENSE.md"><img src="https://img.shields.io/github/license/ozneroL541/FunnyDH?color=2b9348" alt="License"/></a>
+
 # Funny Diffie Hellman
 Funny Diffie Hellman is an easy way to generate a common key between two entities.
 > :warning: **Warning**
