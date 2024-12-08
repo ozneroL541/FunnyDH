@@ -22,7 +22,7 @@ Functions:
         Computes the common key using the secret key a, the other party's public key B, and the prime p.
 """
 
-n:int = 128
+n:int = 256
 '''Number of bits for the prime number. '''
 g:int = 3
 '''Generator for the cyclic group.'''

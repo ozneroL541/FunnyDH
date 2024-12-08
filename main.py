@@ -22,7 +22,7 @@ def main():
     print("B\t- Bob")
     print("A2\t- Alice 2")
     print()
-    option = input("Option:\t")
+    option:str = str(input("Option:\t")).upper()
 
     if "B" in option:
         b.main()

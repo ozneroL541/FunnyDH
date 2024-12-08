@@ -23,7 +23,7 @@ def main():
     """
     p:int = int(input("Enter the prime number:\t"))
     a:int = int(input("Enter the secret key:\t"))
-    B:int = int(input("Enter the other's public key:\t"))
+    B:int = int(input("Enter the Bob's public key:\t"))
     print()
     k:int = fdh.calc_common_key(a, B, p)
     print(f"Common key:\t{k}")
