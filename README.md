@@ -1,7 +1,7 @@
 <a href="https://github.com/ozneroL541/FunnyDH/blob/master/LICENSE.md"><img src="https://img.shields.io/github/license/ozneroL541/FunnyDH?color=2b9348" alt="License"/></a>
 
-# Funny Diffie Hellman
-Funny Diffie Hellman is an easy way to generate a common key between two entities.
+# Funny Diffie-Hellman
+Funny Diffie-Hellman is an easy way to generate a common key between two entities.
 > :warning: **Warning**
 These modules are not safe. The algorithm implementation is purposely not secure. Must not be implemented in any program for security reasons.
 
@@ -27,15 +27,15 @@ Insert the prime number, the memorized private key and the Bob's public key. Use
 @ozneroL541 Lorenzo Radice
 
 ## License
-**Climate Monitoring** is free software: you can redistribute it and/or modify
+**Funny Diffie-Hellman** is free software: you can redistribute it and/or modify
 it under the terms of the **GNU General Public License** as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-**Climate Monitoring** is distributed in the hope that it will be useful,
+**Funny Diffie-Hellman** is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with **Climate Monitoring**.  If not, see <http://www.gnu.org/licenses/>.
+along with **Funny Diffie-Hellman**.  If not, see <http://www.gnu.org/licenses/>.
