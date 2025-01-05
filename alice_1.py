@@ -1,4 +1,3 @@
-from Crypto.Util import number
 import funnydh as fdh
 
 n:int = fdh.n
