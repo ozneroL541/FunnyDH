@@ -22,10 +22,10 @@ def main():
         Prints the common key and the humanized common key.
     """
     p:int = int(input("Enter the prime number:\t"))
-    a:int = int(input("Enter the secret key:\t"))
-    B:int = int(input("Enter the Bob's public key:\t"))
-    print()
+    a:int = int(input("Enter your secret key:\t"))
+    B:int = int(input("Enter Bob's public key:\t"))
     k:int = fdh.calc_common_key(a, B, p)
+    print("-" * 55)
     print(f"Common key:\t{k}")
     k:str = fdh.humanize(k)
     print(f"Common key:\t{k}")

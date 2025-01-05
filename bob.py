@@ -28,7 +28,7 @@ def main():
     k:int = fdh.calc_common_key(b, A, p)
 
     print(f"Generator:\t\t{g}")
-    print("-" * 50)
+    print("-" * 55)
     print(f"Public key:\t{B}")
     print()
     print(f"Common key:\t{k}")
