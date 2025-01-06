@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module funnydh</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">funnydh</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:../src/funnydh.py">../src/funnydh.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="Crypto.Util.number.html">Crypto.Util.number</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-calc_common_key"><strong>calc_common_key</strong></a>(a: int, B: int, p: int) -&gt; int</dt><dd><span class="code">Calculate&nbsp;the&nbsp;common&nbsp;key&nbsp;in&nbsp;the&nbsp;Diffie-Hellman&nbsp;key&nbsp;exchange.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;(int):&nbsp;The&nbsp;private&nbsp;key&nbsp;of&nbsp;the&nbsp;first&nbsp;party.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;B&nbsp;(int):&nbsp;The&nbsp;public&nbsp;key&nbsp;of&nbsp;the&nbsp;second&nbsp;party.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;p&nbsp;(int):&nbsp;A&nbsp;prime&nbsp;number&nbsp;used&nbsp;as&nbsp;the&nbsp;modulus.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;int:&nbsp;The&nbsp;computed&nbsp;common&nbsp;key.</span></dd></dl>
+ <dl><dt><a name="-gen_keys"><strong>gen_keys</strong></a>(g: int, p: int) -&gt; tuple[int, int]</dt><dd><span class="code">Generate&nbsp;a&nbsp;pair&nbsp;of&nbsp;Diffie-Hellman&nbsp;keys.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;g&nbsp;(int):&nbsp;The&nbsp;base&nbsp;(generator)&nbsp;used&nbsp;in&nbsp;the&nbsp;Diffie-Hellman&nbsp;key&nbsp;exchange.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;p&nbsp;(int):&nbsp;The&nbsp;prime&nbsp;modulus&nbsp;used&nbsp;in&nbsp;the&nbsp;Diffie-Hellman&nbsp;key&nbsp;exchange.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;tuple[int,&nbsp;int]:&nbsp;A&nbsp;tuple&nbsp;containing&nbsp;the&nbsp;private&nbsp;key&nbsp;and&nbsp;the&nbsp;corresponding&nbsp;public&nbsp;key.</span></dd></dl>
+ <dl><dt><a name="-gen_prime"><strong>gen_prime</strong></a>(n: int) -&gt; int</dt><dd><span class="code">Generate&nbsp;a&nbsp;prime&nbsp;number&nbsp;of&nbsp;n&nbsp;bits.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n&nbsp;(int):&nbsp;The&nbsp;number&nbsp;of&nbsp;bits&nbsp;for&nbsp;the&nbsp;prime&nbsp;number.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;int:&nbsp;A&nbsp;prime&nbsp;number&nbsp;of&nbsp;n&nbsp;bits.</span></dd></dl>
+ <dl><dt><a name="-gen_public_key"><strong>gen_public_key</strong></a>(g, p, a)</dt><dd><span class="code">Generate&nbsp;a&nbsp;public&nbsp;key&nbsp;for&nbsp;the&nbsp;Diffie-Hellman&nbsp;key&nbsp;exchange.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;g&nbsp;(int):&nbsp;The&nbsp;generator&nbsp;of&nbsp;the&nbsp;cyclic&nbsp;group.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;p&nbsp;(int):&nbsp;A&nbsp;prime&nbsp;number&nbsp;used&nbsp;as&nbsp;the&nbsp;modulus&nbsp;in&nbsp;the&nbsp;Diffie-Hellman&nbsp;key&nbsp;exchange.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;(int):&nbsp;The&nbsp;secret&nbsp;key.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;int:&nbsp;The&nbsp;public&nbsp;key.</span></dd></dl>
+ <dl><dt><a name="-gen_secret_key"><strong>gen_secret_key</strong></a>(p: int) -&gt; int</dt><dd><span class="code">Generate&nbsp;a&nbsp;secret&nbsp;key&nbsp;for&nbsp;the&nbsp;Diffie-Hellman&nbsp;key&nbsp;exchange.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;p&nbsp;(int):&nbsp;A&nbsp;prime&nbsp;number&nbsp;used&nbsp;as&nbsp;the&nbsp;modulus&nbsp;in&nbsp;the&nbsp;Diffie-Hellman&nbsp;key&nbsp;exchange.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;int:&nbsp;A&nbsp;randomly&nbsp;generated&nbsp;secret&nbsp;key&nbsp;in&nbsp;the&nbsp;range&nbsp;[2,&nbsp;p-1].</span></dd></dl>
+ <dl><dt><a name="-humanize"><strong>humanize</strong></a>(x: int) -&gt; str</dt><dd><span class="code">Converts&nbsp;an&nbsp;integer&nbsp;to&nbsp;a&nbsp;human-readable&nbsp;string&nbsp;by&nbsp;encoding&nbsp;it&nbsp;to&nbsp;bytes,<br>
+decoding&nbsp;it&nbsp;to&nbsp;a&nbsp;UTF-8&nbsp;string,&nbsp;and&nbsp;removing&nbsp;any&nbsp;whitespace&nbsp;characters.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;(int):&nbsp;The&nbsp;integer&nbsp;to&nbsp;be&nbsp;converted.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;The&nbsp;human-readable&nbsp;string&nbsp;representation&nbsp;of&nbsp;the&nbsp;integer.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>__annotations__</strong> = {'g': &lt;class 'int'&gt;, 'n': &lt;class 'int'&gt;}<br>
+<strong>g</strong> = 3<br>
+<strong>n</strong> = 256</td></tr></table>
+</body></html>
