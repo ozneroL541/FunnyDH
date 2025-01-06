@@ -6,15 +6,16 @@ Funny Diffie-Hellman is an easy way to generate a common key between two entitie
 These modules are not safe. The algorithm implementation is purposely not secure. Must not be implemented in any program for security reasons.
 
 ## Dependences
-This program requires **python3** and **pyCryptoDome** to work.
+This program requires **python3** and **pyCryptoDome** to be compiled or to be executed on the fly.
+
+## Download
+Find the latest realease on <https://github.com/ozneroL541/FunnyDH/releases> and download the executable according to your Operating System.
 
 ## How to use
-Enter the folder.
+On Linux or MacOS execute <code>./main.bin</code>.
 
-    cd FunnyDH
-Execute the main program (or one of the submodules if you already know which one you are going to use).
+On Windows execute the <code>main.exe</code> file.
 
-    python3 main.py
 ### Alice 1
 To start a key exchange execute the Alice 1 module.
 Give the prime number and the public key to Bob and memorize the private key.
@@ -22,6 +23,14 @@ Give the prime number and the public key to Bob and memorize the private key.
 Start these module after receiving a pair of integers from Alice. You should have received a prime number and the Alice's public key. Insert them as asked. Give Alice the public key and use the human readable common key to communicate.
 ### Alice 2
 Insert the prime number, the memorized private key and the Bob's public key. Use the human readable common key to communicate.
+
+## Compilation
+To compile this program **pyinstaller** is required.
+
+    cd src
+    pyinstaller -F main.py
+
+The executable will be found in <code>dist/</code> directory.
 
 ## Author
 @ozneroL541 Lorenzo Radice
