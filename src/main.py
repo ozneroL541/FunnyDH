@@ -1,6 +1,8 @@
 import alice_1 as a1
 import bob as b
 import alice_2 as a2
+import full_alice as alice
+import sys
 
 def main():
     """
@@ -18,23 +20,32 @@ def main():
         - If "A" is selected, calls a1.main()
         - Otherwise, prints "Invalid option"
     """
-    print("A1\t- Alice 1")
-    print("B\t- Bob")
-    print("A2\t- Alice 2")
-    print()
-    option:str = str(input("Option:\t")).upper()
+    option:str = ""
+    if len(sys.argv) > 1:
+        option:str = sys.argv[1].upper()
+        if "H" in option or "?" in option:
+            print("A1\t- Alice 1")
+            print("B\t- Bob")
+            print("A2\t- Alice 2")
+            print("A\t- Full Alice")
+            print()
+            return
+    else:
+        print("A1\t- Alice 1")
+        print("B\t- Bob")
+        print("A2\t- Alice 2")
+        print("A\t- Full Alice")
+        print()
+        option:str = str(input("Option:\t")).upper()
 
     if "B" in option:
         b.main()
-    elif option == "A2":
-        a2.main()
     elif "A" in option and "2" in option:
         a2.main()
-    elif "A" in option:
+    elif "A" in option and "1" in option:
         a1.main()
     else:
-        print("Invalid option")
-
+        alice.main()
 
 if __name__ == "__main__":
     main()

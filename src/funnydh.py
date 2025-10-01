@@ -83,7 +83,7 @@ def gen_keys(g: int, p: int) -> tuple[int, int]:
 def humanize(x: int) -> str:
     """
     Converts an integer to a human-readable string by encoding it to bytes,
-    decoding it to a UTF-8 string, and removing any whitespace characters.
+    decoding it to an ASCII string, and removing any whitespace characters.
 
     Args:
         x (int): The integer to be converted.
@@ -91,7 +91,7 @@ def humanize(x: int) -> str:
     Returns:
         str: The human-readable string representation of the integer.
     """
-    return ''.join(x.to_bytes((x.bit_length() + 7) // 8, 'big').decode('utf-8', 'ignore').split())
+    return ''.join(x.to_bytes((x.bit_length() + 7) // 8, 'big').decode('ascii', 'ignore').split())
 
 def calc_common_key(a: int, B: int, p: int) -> int:
     """
